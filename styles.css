@@ -1,0 +1,478 @@
+*{
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+}
+
+header {
+    background-color:rgb(250, 250, 250);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 12px;
+    gap:10px;
+    position: fixed;
+    width: 100%;
+    }
+
+    .logo1{
+        margin-right: 25px;
+    }
+header > div {
+    display:flex;
+    gap: 450px;
+    justify-content: center;
+    align-items: center;
+    }
+
+header > div > nav > input {
+    border:none;
+    padding:6px;
+    border-radius: 2px;
+    width:300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav > ul {
+    display:flex;
+    gap: 20px;
+    list-style:none;
+    
+}
+    
+.link{
+    text-decoration: none;
+    transition:0.3s ease;
+}
+
+.link:hover{
+    cursor:pointer;
+    color:rgb(34, 201, 201);
+
+}
+
+.header2{
+    gap:100px;
+    font-size:small;
+
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px;
+    gap: 5px;
+    font-size:smaller;
+
+    }
+
+    button:hover{
+        cursor:grabbing;
+    }
+
+    .opacity-text{
+        color:rgb(34, 32, 32);
+    }
+
+    .ofertas{
+        background-color: coral;
+        height: 50px;
+        padding: 15px;
+        display: flex;
+        position:absolute;
+        list-style: none;
+        margin-top: 100px;
+        width: 100%;
+        justify-content:center;
+        align-items:center;
+        gap: 50px;
+
+    }  
+
+
+  /*tarjetas*/
+
+  .contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:none;
+    background-color:rgb(198, 187, 187);
+    height: 400px;
+    position:relative;
+    padding: 30px;
+    top:150px;
+    gap: 20px;
+
+
+  }
+  
+  .tarjeta {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .tarjeta img {
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .etiqueta {
+    position: absolute;
+    bottom: 90px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 15px;
+  }
+  
+  .agotado {
+    left: 10px;
+  }
+  
+  .quedan {
+    left: 10px;
+    background-color: #444;
+  }
+  
+  .precio {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f60;
+    font-weight: bold;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .descuento {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .rating {
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .rating span {
+    color: #666;
+    font-size: 13px;
+  }
+
+
+
+
+
+/*FIN DE LA TARJETAS*/
+
+
+
+.section2 {
+    background-color: coral;
+        height: 50px;
+        padding: 15px;
+        display: flex;
+        position:static;
+        list-style: none;
+        margin-top: 150px;
+        width: 100%;
+        justify-content:center;
+        align-items:center;
+        gap: 50px;
+        
+}
+
+
+/*tarjetas lo más */
+
+.contenedor-tarjetas-lo-mas{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border:none;
+  background-color:rgb(247, 242, 242);
+  gap: 30px;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  }
+
+.tarjetas{
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 267px;
+  padding: 7px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 450px;
+  overflow:hidden;
+}
+
+/*ESTA MODIFICANDO TODAS LAS IMAGENES AL PONER 100%, SE NECESITA UNICAMENTE EL 100% EN LA IMG PRINCIPAL */
+
+.tarjetas img {
+    object-fit: cover;
+}
+
+.oferta-extra{
+background-color: rgb(17, 16, 16);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight:lighter;
+}
+
+.estrellas {
+  color: #111;
+  font-size: 25px;
+}
+
+.titulo-producto {
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 10px;
+}
+/* Precio y carrito alineados */
+.precio-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* Precio */
+.precio {
+  display: flex;
+  flex-direction:left;
+
+}
+
+.precio-actual {
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+
+}
+
+.precio-anterior {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+  margin-top: 2px;
+  font-weight:lighter;
+
+}
+
+.ventas {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+
+  
+  .tarjeta img {
+    
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  
+  /*incluye la el icono del carrito en una division, y en otra division, el precio de ahora, el antes y las ventas*/
+.info-producto{
+  display: flex;
+  flex-direction:row;
+  gap: 5px;
+  justify-content: space-between;
+  margin: 0px 0;
+}
+
+
+.precio{
+  display: flex;
+  flex-direction:row;
+  gap: 6px;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.precio-actual{
+  font-size: 21px;
+}
+
+.oferta-extra {
+  background-color: #ffecd2;
+  color: #f37e09;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  }
+
+
+  /*BOTON VER MAS*/
+
+  .contenedor-boton{
+    background-color:rgb(247, 242, 242);
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(247, 242, 242);
+    border-bottom:30px solid rgb(247, 242, 242);
+
+  }
+
+  .btn-ver-mas {
+    background-color: #ff7900; /* Naranja */
+    color: rgb(40, 39, 39);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-colorcubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s ease;
+    margin-left:auto;
+    margin-right:auto;
+    top:30px;
+  }
+  
+  .btn-ver-mas:hover {
+    background-color: #e86d00; /* Un poco más oscuro al pasar el mouse */
+  }
+  
+  .btn-ver-mas .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+/*FIN DEL BOTON*/
+
+/*PARTEFINALFONDOMK*/
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 23%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.icons img {
+  width: 40px;
+  margin: 5px;
+}
+
+.footer-social {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-legal {
+  text-align: center;
+  font-size: 12px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.footer-legal a {
+  margin: 0 10px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}
