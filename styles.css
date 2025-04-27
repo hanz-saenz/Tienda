@@ -6,36 +6,71 @@
 }
 
 header {
-    background-color:rgb(250, 250, 250);
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding: 12px;
-    gap:10px;
-    position: fixed;
-    width: 100%;
-    }
-
-    .logo1{
-        margin-right: 25px;
-    }
-header > div {
-    display:flex;
-    gap: 450px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+    padding: 12px;
+    gap: 10px;
+    position: fixed;
+    top: 0;  /* <- Asegura que esté pegado arriba */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* <- Para que esté encima de todo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* (opcional) sombra para dar separación */
+}
+
+.logo1 {
+    margin-right: 25px;
+    max-width: 120px; /* Evita que el logo se deforme */
+}
+
+header > div {
+    display: flex;
+    gap: 50px; /* Mejor reducir el gap para móviles */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* <- Para que sea responsive */
+}
 
 header > div > nav > input {
-    border:none;
-    padding:6px;
+    border: none;
+    padding: 6px;
     border-radius: 2px;
-    width:300px;
-    justify-content: center;
-    align-items: center;
-    
+    width: 250px; /* Ajusto a un tamaño mejor para móviles */
 }
+
+.header2 nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.header2 nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    header > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    header > div > nav > input {
+        width: 80%;
+    }
+
+    .header2 nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ 
+
 
 nav > ul {
     display:flex;
